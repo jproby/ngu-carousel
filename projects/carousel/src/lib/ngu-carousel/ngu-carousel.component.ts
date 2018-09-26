@@ -165,7 +165,7 @@ export class NguCarousel extends NguCarouselStore
     let dataStream: Observable<any[]> | undefined;
 
     if (Array.isArray(this._dataSource)) {
-      dataStream = of(this._dataSource);
+      dataStream = Observable.of(this._dataSource);
     }
 
     if (dataStream) {
